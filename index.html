@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Alpha</title>
 
   <!-- Bootstrap css -->
   <link 
@@ -15,25 +15,32 @@
   
   <!-- Custom css -->
   <link rel="stylesheet" href="./assets/css/style.css" type="text/css" media="all" />
+
+  <!-- Google Fonts -->
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,700;0,900;1,400&family=Poppins:wght@300;500;600;700;800&display=swap" 
+    rel="stylesheet"
+  >
+
 </head>
 <body>
   <header>
     <div class="container">
-      <nav id="idea" class="navbar navbar-expand-lg fixed-top py-0">
+      <nav id="idea" class="navbar navbar-expand-lg fixed-top py-2 mr-0">
         <div class="container">
           <div class="navbar-header">
-              <a class="navbar-brand font-weight-bold">ALPHA <span> <img src="./assets/images/Lens 1.png" alt="alpha-icon"> </span></a>
+              <a href="#" class="navbar-brand font-weight-bold"><span class="brand"><img src="./assets/images/ALPHA.png" alt="alpha" class="img-fluid"> </span> <span> <img src="./assets/images/Lens 1.png" alt="alpha-icon" class="img-fluid"> </span></a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto">
-                  <li><a href="#about" class="nav-link break">ABOUT</a></li>  
-                  <li><a href="#gallery" class="nav-link break">GALLERY</a></li>
-                  <li><a href="#services" class="nav-link break">SERVICES</a></li>
-                  <li><a href="#blog" class="nav-link break">BLOG</a></li>
-                  <li><a href="#contact" class="nav-link break">CONTACT</a></li>
+                  <li><a href="#about" class="nav-link break mr-4">ABOUT</a></li>  
+                  <li><a href="#gallery" class="nav-link break mr-4">GALLERY</a></li>
+                  <li><a href="#services" class="nav-link break mr-4">SERVICES</a></li>
+                  <li><a href="#blog" class="nav-link break mr-4">BLOG</a></li>
+                  <li><a href="#contact" class="nav-link break mr-4">CONTACT</a></li>
               </ul>
           </div>
       </div> 
@@ -65,11 +72,11 @@
     <div class="container">
         <h2 class="text-center colored py-3">About Us</h2>
         <div class="row" >
-          <div class="col-12 col-lg-6 py-3 text-center">
+          <div class="col-12 col-lg-5 py-3 text-center">
             <img src="./assets/images/about.png" class="img-fluid image" alt="A camera">
           </div>
-            <div class="col-12 col-lg-6 py-3">
-                <h4>Welcome to Alpha Lens</h4>
+            <div class="col-12 col-lg-7 py-3">
+                <h4 class="sub-title font-weight-bold">Welcome to Alpha Lens</h4>
                 <p class="paragraph font-weight-normal">
                   Good moment last all of a second, but the memory lives on forever, It's no doubt that
                   we all cherish the times that spent during celebration, vacation or a simple relaxation with loved ones.
@@ -89,11 +96,11 @@
   </section> 
 
   <!-- Gallery Section -->
-  <section class="gallery" id="gallery">
+  <section class=" py-5" id="gallery">
     <div class="container">
       <h2>Gallery</h2>
-      <div class="row">
-        <div class="col-lg-4">
+      <div class="row desktop">
+        <div class="col-4">
           <div class="row">
             <div class="col-12 py-3">
               <img src="./assets/images/image1.png" alt="image 1" class="img-fluid">
@@ -110,7 +117,7 @@
           </div>
         </div>
 
-        <div class="col-lg-4">
+        <div class="col-4">
           <div class="row">
             <div class="col-12 py-3">
               <img src="./assets/images/image5.png" alt="image 5" class="img-fluid">
@@ -124,7 +131,7 @@
           </div>
         </div>
 
-        <div class="col-lg-4">
+        <div class="col-4">
           <div class="row">
             <div class="col-12 py-3">
               <img src="./assets/images/image8.png" alt="image 8" class="img-fluid">
@@ -142,15 +149,57 @@
         </div>
 
       </div>
+
+      <!-- Mobile Gallery -->
+      <div class="row mobile px-2">
+        <div class="col-6">
+          <div class="row">
+            <div class="col-12 py-2 px-2">
+              <img src="./assets/images/image1.png" alt="image 1" class="img-fluid">
+            </div>
+            <div class="col-12 py-2 px-2">
+              <img src="./assets/images/image9.png" alt="image 9" class="img-fluid">
+            </div>
+            <div class="col-12 py-2 px-2">
+              <img src="./assets/images/image2.png" alt="image 2" class="img-fluid">
+            </div>
+            <div class="col-12 py-2 px-2">
+              <img src="./assets/images/image10.png" alt="image 10" class="img-fluid">
+            </div>
+            <div class="col-12 py-2 px-2">
+              <img src="./assets/images/image7.png" alt="image 7" class="img-fluid">
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="row">
+            <div class="col-12 py-2 px-2">
+              <img src="./assets/images/image5.png" alt="image 5" class="img-fluid">
+            </div>
+            <div class="col-12 py-2 px-2">
+              <img src="./assets/images/image8.png" alt="image 8" class="img-fluid">
+            </div>
+            <div class="col-12 py-2 px-2">
+              <img src="./assets/images/image6.png" alt="image 6" class="img-fluid">
+            </div>
+            <div class="col-12 py-2 px-2">
+              <img src="./assets/images/image3.png" alt="image 3" class="img-fluid">
+            </div>
+            <div class="col-12 py-2 px-2">
+              <img src="./assets/images/image11.png" alt="image 11" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Services Section -->
-  <section class="services" id="services">
+  <section class="services py-5" id="services">
     <div class="container">
-      <h2>Our Serices</h2>
-      <div id="sevicesCarousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
+      <h2>Our Services</h2>
+      <div id="sevicesCarousel" class="carousel slide py-5" data-ride="carousel">
+        <ol class="carousel-indicators my-4">
           <li data-target="#sevicesCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#sevicesCarousel" data-slide-to="1"></li>
         </ol>
@@ -187,35 +236,35 @@
   </section>
 
   <!-- Blog Section -->
-  <section class="blog" id="blog">
+  <section class="blog py-5" id="blog">
     <div class="container">
       <h2>Alpha Blog</h2>
-      <div class="row">
-        <div class="col-4">
+      <div class="row py-5">
+        <div class="col-12 col-lg-4">
           <div class="card">
             <img src="./assets/images/blog1.png" class="card-img-top img-fluid" alt="Kid's bed">
-            <div class="card-body">
-              <h5 class="card-title">Best beds for kids</h5>
+            <div class="card-body pl-0">
+              <h5 class="card-title font-weight-bold">Best beds for kids</h5>
               <p class="card-text">Lifestyle / January 2020</p>
             </div>
           </div>
         </div>
 
-        <div class="col-4">
+        <div class="col-12 col-lg-4">
           <div class="card">
             <img src="./assets/images/blog2.png" class="card-img-top img-fluid" alt="Junks or Veggies">
-            <div class="card-body">
-              <h5 class="card-title">Junks or Veggies?</h5>
+            <div class="card-body pl-0">
+              <h5 class="card-title font-weight-bold">Junks or Veggies?</h5>
               <p class="card-text">Lifestyle / December 2019</p>
             </div>
           </div>
         </div>
 
-        <div class="col-4">
+        <div class="col-12 col-lg-4">
           <div class="card">
             <img src="./assets/images/blog3.png" class="card-img-top img-fluid" alt="A trip to mars">
-            <div class="card-body">
-              <h5 class="card-title">A trip to Mars</h5>
+            <div class="card-body pl-0">
+              <h5 class="card-title font-weight-bold">A trip to Mars</h5>
               <p class="card-text">Travel / November 2019</p>
             </div>
           </div>
@@ -229,22 +278,24 @@
   </section>
 
   <!-- Contact Section -->
-  <section class="contact" id="contact">
+  <section class="contact py-5" id="contact">
     <div class="container">
       <h2>Contact</h2>
-      <div class="row">
+      <div class="row contactme py-5">
         <div class="col-12 col-lg-4">
-          <p>
-            Alpha Lens is available for you enquiry. 
-            We provide all you need for that extra perfect shot for your event or portrait. 
-            Get in touch with us.
-          </p>
+          <div class="container px-0 px-lg-4">
+            <p>
+              Alpha Lens is available for you enquiry. 
+              We provide all you need for that extra perfect shot for your event or portrait. 
+              Get in touch with us.
+            </p>
+          </div>
         </div>
         <div class="col-12 col-lg-4">
           <dl>
             <dt>Email:</dt>
             <dd>getquote@alphalens.com</dd>
-            <dt>Mobile:</dt>
+            <dt class="pt-3">Mobile:</dt>
             <dd>+44 587 5969 856</dd>
           </dl>
         </div>
@@ -252,7 +303,7 @@
           <dl>
             <dt>Location:</dt>
             <dd>56, Alveriot Rd, Ontario, CA</dd>
-            <dt>Website:</dt>
+            <dt class="pt-3">Website:</dt>
             <dd>www.alphalens.com</dd>
           </dl>
         </div>
@@ -263,21 +314,23 @@
   <!-- Footer -->
   <footer>
     <div class="container">
-      <div class="row">
+      <div class="row py-4"> 
         <div class="col-12 col-lg-6">
-          <img src="./assets/images/Facebook White.png" alt="Facebook icon">
-          <img src="./assets/images/Twitter White.png" alt="Twitter icon">
-          <img src="./assets/images/IG White.png" alt="Instagram icon">
-          <img src="./assets/images/pinterest white.png" alt="Pinterest icon">
+          <img src="./assets/images/Facebook White.png" alt="Facebook icon" class="img-fluid mr-1">
+          <img src="./assets/images/Twitter White.png" alt="Twitter icon" class="img-fluid mr-3">
+          <img src="./assets/images/IG White.png" alt="Instagram icon" class="img-fluid mr-3">
+          <img src="./assets/images/pinterest white.png" alt="Pinterest icon" class="img-fluid mr-3">
         </div>
         <div class="col-12 col-lg-6">
-          <p>
+          <p class="copy-right text-white">
             Copyright 2020 All rights reserved
           </p>
         </div>
       </div>
     </div>
   </footer>
+
+
 <!-- jquery cdn -->
   <script 
     src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
