@@ -21,21 +21,26 @@
     href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,700;0,900;1,400&family=Poppins:wght@300;500;600;700;800&display=swap" 
     rel="stylesheet"
   >
+  <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
 
 </head>
 <body>
   <div class="loader">
+    <div class="lds-facebook">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
     <div id="inTurnFadingTextG">
       <div id="inTurnFadingTextG_1" class="inTurnFadingTextG">A</div>
       <div id="inTurnFadingTextG_2" class="inTurnFadingTextG">L</div>
       <div id="inTurnFadingTextG_3" class="inTurnFadingTextG">P</div>
       <div id="inTurnFadingTextG_4" class="inTurnFadingTextG">H</div>
-      <div id="inTurnFadingTextG_5" class="inTurnFadingTextG">A</div>
-      <div id="inTurnFadingTextG_6" class="inTurnFadingTextG">-</div>
-      <div id="inTurnFadingTextG_7" class="inTurnFadingTextG">L</div>
-      <div id="inTurnFadingTextG_8" class="inTurnFadingTextG">E</div>
-      <div id="inTurnFadingTextG_9" class="inTurnFadingTextG">N</div>
-      <div id="inTurnFadingTextG_10" class="inTurnFadingTextG">S</div>
+      <div id="inTurnFadingTextG_5" class="inTurnFadingTextG mr-3">A</div>
+      <div id="inTurnFadingTextG_6" class="inTurnFadingTextG">L</div>
+      <div id="inTurnFadingTextG_7" class="inTurnFadingTextG">E</div>
+      <div id="inTurnFadingTextG_8" class="inTurnFadingTextG">N</div>
+      <div id="inTurnFadingTextG_9" class="inTurnFadingTextG">S</div>
     </div>
   </div>
 
@@ -75,7 +80,12 @@
                 <h1 class="font-weight-bold text-left head text-white">Reveal the rich reality <br/> of each moment!</h1>
             </div>
             <div class="text-left">
-                <button class="btn button py-3 px-3 ">OUR SERVICES</button>
+              <div class="box-3">
+                <div class="btn button">
+                  <span>OUR SERVICES</span>
+                </div>
+              </div>
+                <!-- <button class="btn button py-3 px-3 "><span>OUR SERVICES</span></button> -->
             </div>
           </div>
         </div>
@@ -104,7 +114,7 @@
                   wildlife photography, and photojournalism.
                 </p>
                 <div class="pt-5">
-                    <button class="btn button py-3 px-3 font-weight-bold"> READ MORE </button>
+                    <button class="btn button py-2 font-weight-bold"> READ MORE </button>
                 </div>
             </div>
         </div>
@@ -214,7 +224,8 @@
   <section class="services py-5" id="services">
     <div class="container">
       <h2>Our Services</h2>
-      <div id="sevicesCarousel" class="carousel slide py-5" data-ride="carousel">
+      <!-- Desktop -->
+      <div id="sevicesCarousel" class="carousel slide py-5 desktop-carousel" data-ride="carousel">
         <ol class="carousel-indicators my-4">
           <li data-target="#sevicesCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#sevicesCarousel" data-slide-to="1"></li>
@@ -224,12 +235,15 @@
             <div class="row">
               <div class="col-4">
                 <img src="./assets/images/Wedding.png" class="d-block w-100" alt="Wedding photo">
+                <span class="text-white carousel-text text-center font-weight-bold">Wedding <br/>Photography</span>
               </div>
               <div class="col-4">
                 <img src="./assets/images/Fashion.png" class="d-block w-100" alt="Fashion photo">
+                <span class="text-white carousel-text text-center font-weight-bold">Fashion <br/>Photography</span>
               </div>
               <div class="col-4">
                 <img src="./assets/images/Wildlife.png" class="d-block w-100" alt="wildlife photo">
+                <span class="text-white carousel-text text-center font-weight-bold">Wildlife<br/> Photography</span>
               </div>
             </div>
           </div>
@@ -237,12 +251,48 @@
             <div class="row">
               <div class="col-4">
                 <img src="./assets/images/Wedding.png" class="d-block w-100" alt="Wedding photo">
+                <span class="text-white carousel-text text-center font-weight-bold">Wedding <br/>Photography</span>
               </div>
               <div class="col-4">
                 <img src="./assets/images/Fashion.png" class="d-block w-100" alt="Fashion photo">
+                <span class="text-white carousel-text text-center font-weight-bold">Fashion <br/>Photography</span>
               </div>
               <div class="col-4">
                 <img src="./assets/images/Wildlife.png" class="d-block w-100" alt="wildlife photo">
+                <span class="text-white carousel-text text-center font-weight-bold">Wildlife<br/> Photography</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile -->
+      <div id="sevicesCarousel" class="carousel slide py-5 mobile-carousel" data-ride="carousel">
+        <ol class="carousel-indicators my-4">
+          <li data-target="#sevicesCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#sevicesCarousel" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-6">
+                <img src="./assets/images/Wedding.png" class="d-block w-100" alt="Wedding photo">
+                <span class="text-white carousel-text text-center font-weight-bold">Wedding <br/>Photography</span>
+              </div>
+              <div class="col-6">
+                <img src="./assets/images/Fashion.png" class="d-block w-100" alt="Fashion photo">
+                <span class="text-white carousel-text text-center font-weight-bold">Fashion <br/>Photography</span>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-6">
+                <img src="./assets/images/Wildlife.png" class="d-block w-100" alt="wildlife photo">
+                <span class="text-white carousel-text text-center font-weight-bold">Wildlife<br/> Photography</span>
+              </div>
+              <div class="col-6">
+                <img src="./assets/images/Wedding.png" class="d-block w-100" alt="Wedding photo">
+                <span class="text-white carousel-text text-center font-weight-bold">Wedding <br/>Photography</span>
               </div>
             </div>
           </div>
