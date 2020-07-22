@@ -9,11 +9,15 @@ body {
 .navbar.scrolled {
   background-color: white;
 	transition: background 500ms;
-
 }
 
 .nav-link {
   color: black;
+}
+
+.navbar-toggler:focus {
+	box-shadow: none;
+	outline: none;
 }
 
 .copy-right-mob {
@@ -143,13 +147,16 @@ dt {
   color: #722F37;
 }
 
-.copy-right {
+.footer {
+	justify-content: space-between;
+}
+
+.copy-right-desk {
   float: right;
   font-weight: 300;
-  font-size: 23px;
+  font-size: 20px;
   line-height: 35px;
-  letter-spacing: 1px;
-
+	letter-spacing: 1px;
 }
 
 @media (max-width: 991px) {
@@ -181,18 +188,18 @@ h2 {
 	line-height: 52px;
 	letter-spacing: 1px;
 }
+.copy-right-mob {
+	display: block;
+}
+.copy-right-desk {
+	display: none;
+}
 }
 
 @media (max-width: 499px) {
 	.carousel-text {
 		font-size: 18px;
 		line-height: 25px;
-	}
-	.copy-right-mob {
-		display: block;
-	}
-	.copy-right-desk {
-		display: none;
 	}
 }
 
