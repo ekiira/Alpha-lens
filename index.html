@@ -16,6 +16,9 @@
   <!-- Custom css -->
   <link rel="stylesheet" href="./assets/css/style.css" type="text/css" media="all" />
 
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <!-- Google Fonts -->
   <link 
     href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,700;0,900;1,400&family=Poppins:wght@300;500;600;700;800&display=swap" 
@@ -52,7 +55,7 @@
               <a href="#" class="navbar-brand font-weight-bold"><span class="brand"><img src="./assets/images/ALPHA.png" alt="alpha" class="img-fluid"> </span> <span> <img src="./assets/images/Lens 1.png" alt="alpha-icon" class="img-fluid"> </span></a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+              <span> <img src="./assets/images/hamburger-menu.svg" alt="hamburger-icon" class="navbar-toggler-icon"> </span>
           </button>
           <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto">
@@ -85,7 +88,6 @@
                   <span>OUR SERVICES</span>
                 </div>
               </div>
-                <!-- <button class="btn button py-3 px-3 "><span>OUR SERVICES</span></button> -->
             </div>
           </div>
         </div>
@@ -96,11 +98,13 @@
   <!-- About Section -->
   <section class="about py-5" id="about"> 
     <div class="container">
+      <div data-aos="zoom-in-right">
         <h2 class="text-center colored py-3">About Us</h2>
+      </div>
         <div class="row" >
           <div class="col-12 col-lg-5 py-3 text-center">
-            <img src="./assets/images/about.png" class="img-fluid image" alt="A camera">
-          </div>
+              <img src="./assets/images/about.png" class="img-fluid image pulse" alt="A camera">
+            </div>
             <div class="col-12 col-lg-7 py-3">
                 <h4 class="sub-title font-weight-bold">Welcome to Alpha Lens</h4>
                 <p class="paragraph font-weight-normal">
@@ -124,21 +128,39 @@
   <!-- Gallery Section -->
   <section class=" py-5" id="gallery">
     <div class="container">
-      <h2>Gallery</h2>
+      <div data-aos="zoom-in-right">
+        <h2>Gallery</h2>
+      </div>
       <div class="row desktop">
         <div class="col-4">
           <div class="row">
             <div class="col-12 py-3">
-              <img src="./assets/images/image1.png" alt="image 1" class="img-fluid">
+              <div data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-duration="2000">
+                  <img src="./assets/images/image1.png" alt="image 1" class="img-fluid">
+              </div>
             </div>
             <div class="col-12 py-3">
-              <img src="./assets/images/image2.png" alt="image 2" class="img-fluid">
+              <div data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-duration="2000">
+                  <img src="./assets/images/image2.png" alt="image 2" class="img-fluid">
+            </div>
             </div>
             <div class="col-12 py-3">
-              <img src="./assets/images/image3.png" alt="image 3" class="img-fluid">
+              <div data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-duration="2000">
+                  <img src="./assets/images/image3.png" alt="image 3" class="img-fluid">
+                </div>
             </div>
             <div class="col-12 py-3">
-              <img src="./assets/images/image4.png" alt="image 4" class="img-fluid">
+              <div data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-duration="2000">
+                  <img src="./assets/images/image4.png" alt="image 4" class="img-fluid">
+              </div>
             </div>
           </div>
         </div>
@@ -146,13 +168,25 @@
         <div class="col-4">
           <div class="row">
             <div class="col-12 py-3">
-              <img src="./assets/images/image5.png" alt="image 5" class="img-fluid">
+              <div data-aos="fade-down"
+                data-aos-offset="300"
+                data-aos-duration="2000">
+                  <img src="./assets/images/image5.png" alt="image 5" class="img-fluid">
+              </div>
             </div>
             <div class="col-12 py-3">
-              <img src="./assets/images/image6.png" alt="image 6" class="img-fluid">
+              <div data-aos="flip-left"
+                data-aos-offset="300"
+                data-aos-duration="2000">
+                  <img src="./assets/images/image6.png" alt="image 6" class="img-fluid">
+              </div>
             </div>
             <div class="col-12 py-3">
-              <img src="./assets/images/image7.png" alt="image 7" class="img-fluid">
+              <div data-aos="fade-up"
+                data-aos-offset="300"
+                data-aos-duration="2000">
+                  <img src="./assets/images/image7.png" alt="image 7" class="img-fluid seven">
+              </div>
             </div>
           </div>
         </div>
@@ -160,16 +194,32 @@
         <div class="col-4">
           <div class="row">
             <div class="col-12 py-3">
-              <img src="./assets/images/image8.png" alt="image 8" class="img-fluid">
+              <div data-aos="fade-left"
+                data-aos-offset="300"
+                data-aos-duration="2000">                
+                  <img src="./assets/images/image8.png" alt="image 8" class="img-fluid">
+              </div>
             </div>
             <div class="col-12 py-3">
-              <img src="./assets/images/image9.png" alt="image 9" class="img-fluid">
+              <div data-aos="fade-left"
+                data-aos-offset="300"
+                data-aos-duration="2000">
+                  <img src="./assets/images/image9.png" alt="image 9" class="img-fluid">
+              </div>
             </div>
             <div class="col-12 py-3">
-              <img src="./assets/images/image10.png" alt="image 10" class="img-fluid">
+              <div data-aos="fade-left"
+                data-aos-offset="300"
+                data-aos-duration="2000">
+                  <img src="./assets/images/image10.png" alt="image 10" class="img-fluid">
+              </div>
             </div>
             <div class="col-12 py-3">
-              <img src="./assets/images/image11.png" alt="image 11" class="img-fluid">
+              <div data-aos="fade-left"
+                data-aos-offset="300"
+                data-aos-duration="2000">
+                  <img src="./assets/images/image11.png" alt="image 11" class="img-fluid">
+              </div>
             </div>
           </div>
         </div>
@@ -181,38 +231,79 @@
         <div class="col-6">
           <div class="row">
             <div class="col-12 py-2 px-2">
-              <img src="./assets/images/image1.png" alt="image 1" class="img-fluid">
+              <div data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-duration="2000">
+                <img src="./assets/images/image1.png" alt="image 1" class="img-fluid">
+            </div>
             </div>
             <div class="col-12 py-2 px-2">
-              <img src="./assets/images/image9.png" alt="image 9" class="img-fluid">
+              <div data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-duration="2000">
+                <img src="./assets/images/image9.png" alt="image 9" class="img-fluid">
+            </div>
             </div>
             <div class="col-12 py-2 px-2">
-              <img src="./assets/images/image2.png" alt="image 2" class="img-fluid">
+              <div data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-duration="2000">
+                <img src="./assets/images/image2.png" alt="image 2" class="img-fluid">
+            </div>
             </div>
             <div class="col-12 py-2 px-2">
-              <img src="./assets/images/image10.png" alt="image 10" class="img-fluid">
+              <div data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-duration="2000">
+                <img src="./assets/images/image10.png" alt="image 10" class="img-fluid">
+            </div>
             </div>
             <div class="col-12 py-2 px-2">
-              <img src="./assets/images/image7.png" alt="image 7" class="img-fluid">
+              <div data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-duration="2000">
+                <img src="./assets/images/image7.png" alt="image 7" class="img-fluid">
+            </div>
             </div>
           </div>
         </div>
         <div class="col-6">
           <div class="row">
             <div class="col-12 py-2 px-2">
+              <div data-aos="fade-left"
+              data-aos-offset="300"
+              data-aos-duration="2000">
               <img src="./assets/images/image5.png" alt="image 5" class="img-fluid">
             </div>
+            </div>
             <div class="col-12 py-2 px-2">
+              <div data-aos="fade-left"
+              data-aos-offset="300"
+              data-aos-duration="2000">
               <img src="./assets/images/image8.png" alt="image 8" class="img-fluid">
             </div>
+            </div>
             <div class="col-12 py-2 px-2">
+              <div data-aos="fade-left"
+              data-aos-offset="300"
+              data-aos-duration="2000">
               <img src="./assets/images/image6.png" alt="image 6" class="img-fluid">
             </div>
-            <div class="col-12 py-2 px-2">
-              <img src="./assets/images/image3.png" alt="image 3" class="img-fluid">
             </div>
             <div class="col-12 py-2 px-2">
-              <img src="./assets/images/image11.png" alt="image 11" class="img-fluid">
+              <div data-aos="fade-left"
+              data-aos-offset="300"
+              data-aos-duration="2000">
+              <img src="./assets/images/image3.png" alt="image 3" class="img-fluid">
+            </div>
+            </div>
+            <div class="col-12 py-2 px-2">
+              <div data-aos="fade-left"
+              data-aos-offset="300"
+              data-aos-duration="2000">
+              <img src="./assets/images/11.svg" alt="image 11" class="img-fluid">
+
+            </div>
             </div>
           </div>
         </div>
@@ -223,7 +314,9 @@
   <!-- Services Section -->
   <section class="services py-5" id="services">
     <div class="container">
-      <h2>Our Services</h2>
+      <div data-aos="zoom-in-right">
+        <h2>Our Services</h2>
+      </div>
       <!-- Desktop -->
       <div id="sevicesCarousel" class="carousel slide py-5 desktop-carousel" data-ride="carousel">
         <ol class="carousel-indicators my-4">
@@ -291,8 +384,8 @@
                 <span class="text-white carousel-text text-center font-weight-bold">Wildlife<br/> Photography</span>
               </div>
               <div class="col-6">
-                <img src="./assets/images/Wedding.png" class="d-block w-100" alt="Wedding photo">
-                <span class="text-white carousel-text text-center font-weight-bold">Wedding <br/>Photography</span>
+                <img src="./assets/images/Fashion.png" class="d-block w-100" alt="Fashion photo">
+                <span class="text-white carousel-text text-center font-weight-bold">Fashion <br/>Photography</span>
               </div>
             </div>
           </div>
@@ -304,11 +397,13 @@
   <!-- Blog Section -->
   <section class="blog py-5" id="blog">
     <div class="container">
-      <h2>Alpha Blog</h2>
+      <div data-aos="zoom-in-right">
+        <h2>Alpha Blog</h2>
+      </div>
       <div class="row py-5">
-        <div class="col-12 col-lg-4">
+        <div class="col-12 col-lg-4 py-3 py-lg-0">
           <div class="card">
-            <img src="./assets/images/blog1.png" class="card-img-top img-fluid" alt="Kid's bed">
+            <img src="./assets/images/blog1.png" class="card-img-top img-fluid pulse" alt="Kid's bed">
             <div class="card-body pl-0">
               <h5 class="card-title font-weight-bold">Best beds for kids</h5>
               <p class="card-text">Lifestyle / January 2020</p>
@@ -316,9 +411,9 @@
           </div>
         </div>
 
-        <div class="col-12 col-lg-4">
+        <div class="col-12 col-lg-4 py-3 py-lg-0">
           <div class="card">
-            <img src="./assets/images/blog2.png" class="card-img-top img-fluid" alt="Junks or Veggies">
+            <img src="./assets/images/blog2.png" class="card-img-top img-fluid pulse" alt="Junks or Veggies">
             <div class="card-body pl-0">
               <h5 class="card-title font-weight-bold">Junks or Veggies?</h5>
               <p class="card-text">Lifestyle / December 2019</p>
@@ -326,9 +421,9 @@
           </div>
         </div>
 
-        <div class="col-12 col-lg-4">
+        <div class="col-12 col-lg-4 py-3 py-lg-0">
           <div class="card">
-            <img src="./assets/images/blog3.png" class="card-img-top img-fluid" alt="A trip to mars">
+            <img src="./assets/images/blog3.png" class="card-img-top img-fluid pulse" alt="A trip to mars">
             <div class="card-body pl-0">
               <h5 class="card-title font-weight-bold">A trip to Mars</h5>
               <p class="card-text">Travel / November 2019</p>
@@ -346,7 +441,9 @@
   <!-- Contact Section -->
   <section class="contact py-5" id="contact">
     <div class="container">
-      <h2>Contact</h2>
+      <div data-aos="zoom-in-right">
+        <h2>Contact</h2>
+      </div>
       <div class="row contactme py-5">
         <div class="col-12 col-lg-4">
           <div class="container px-0 px-lg-4">
@@ -391,8 +488,11 @@
           <img src="./assets/images/pinterest white.png" alt="Pinterest icon" class="img-fluid mr-3">
         </div>
         <div class="col-12 col-lg-6">
-          <p class="copy-right text-white">
+          <p class="copy-right-desk text-white">
             Copyright 2020 All rights reserved
+          </p>
+          <p class="copy-right-mob text-white">
+            Copyright 2020 <br/> All rights reserved
           </p>
         </div>
       </div>
@@ -421,8 +521,16 @@
     crossorigin="anonymous">
   </script>
 
-  <!-- Custim Js -->
+  <!-- Custom Js -->
   <script src="./assets/js/index.js"></script>
+
+  <!-- AOS Library -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Initialize AOS -->
+  <script>
+    AOS.init();
+  </script>
 
 <!-- Nav color transition -->
   <script>
@@ -437,6 +545,8 @@
 <script>
   // ScrollReveal().reveal(' font-weight-bold.row', {delay: 250});
   $('body').scrollspy({ target: '#idea' });
+  $(document).ready(function() {
+  $('.carousel').carousel({interval: 1200})});
 </script>
 </body>
 </html>
