@@ -4,6 +4,6 @@ const loader = document.querySelector(".loader");
 window.addEventListener('load', function () {
   setTimeout(() => {
     loader.className += " hidden";
-  }, 3000)
+  }, 2200)
 });
 
