@@ -42,7 +42,7 @@ body {
 .home {
   width:100% ;
   height: 100vh;
-  background: url(../images/bg.png) no-repeat;
+  background: url(../images/localbg.png) no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
   background-position: center;
