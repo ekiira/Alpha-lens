@@ -198,6 +198,10 @@ h2 {
 .copy-right-desk {
 	display: none;
 }
+.navbar {
+  background-color: white;
+}
+
 }
 
 @media (max-width: 499px) {
