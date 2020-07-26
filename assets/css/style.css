@@ -456,3 +456,23 @@ h2 {
 .button:focus {
   box-shadow: none;
 }
+
+.modal-content {
+	background-color:transparent;
+	border:none;
+}
+
+.modal-content button {
+	color:#fff;
+	font-size:50px;
+}
+
+.modal-content button:hover {
+	color:#fff;
+}
+
+.modal-content button:focus {
+	color:#fff;
+	box-shadow:none;
+	outline:0;
+}
